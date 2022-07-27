@@ -11,14 +11,20 @@
 		8973ACC22890998C0007B49B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8973ACC12890998C0007B49B /* ContentView.swift */; };
 		8973ACC42890998E0007B49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8973ACC32890998E0007B49B /* Assets.xcassets */; };
 		8973ACC72890998E0007B49B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8973ACC62890998E0007B49B /* Preview Assets.xcassets */; };
+		89AB17232891E2DB00345ED5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AB17222891E2DB00345ED5 /* Extensions.swift */; };
+		A7D5EEEAB0338E6C34452BC9 /* Pods_Toast_Popup_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B349E95B04FBA5B71B7219FA /* Pods_Toast_Popup_tutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50121AD7B44431F4DBAE1F46 /* Pods-Toast_Popup_tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast_Popup_tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Toast_Popup_tutorial/Pods-Toast_Popup_tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		8973ACBC2890998C0007B49B /* Toast_Popup_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toast_Popup_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8973ACBF2890998C0007B49B /* Toast_Popup_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_Popup_tutorialApp.swift; sourceTree = "<group>"; };
 		8973ACC12890998C0007B49B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8973ACC32890998E0007B49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8973ACC62890998E0007B49B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89AB17222891E2DB00345ED5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B349E95B04FBA5B71B7219FA /* Pods_Toast_Popup_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast_Popup_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9E1A5DE6D85BB97EA7441D /* Pods-Toast_Popup_tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast_Popup_tutorial.release.xcconfig"; path = "Target Support Files/Pods-Toast_Popup_tutorial/Pods-Toast_Popup_tutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D5EEEAB0338E6C34452BC9 /* Pods_Toast_Popup_tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73E7F10961C3A1E967A8B7E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50121AD7B44431F4DBAE1F46 /* Pods-Toast_Popup_tutorial.debug.xcconfig */,
+				BE9E1A5DE6D85BB97EA7441D /* Pods-Toast_Popup_tutorial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8973ACB32890998C0007B49B = {
 			isa = PBXGroup;
 			children = (
 				8973ACBE2890998C0007B49B /* Toast_Popup_tutorial */,
 				8973ACBD2890998C0007B49B /* Products */,
+				73E7F10961C3A1E967A8B7E3 /* Pods */,
+				DBCD47AC00E5FB9B0FD9F7EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +73,7 @@
 				8973ACC12890998C0007B49B /* ContentView.swift */,
 				8973ACC32890998E0007B49B /* Assets.xcassets */,
 				8973ACC52890998E0007B49B /* Preview Content */,
+				89AB17222891E2DB00345ED5 /* Extensions.swift */,
 			);
 			path = Toast_Popup_tutorial;
 			sourceTree = "<group>";
@@ -67,6 +86,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DBCD47AC00E5FB9B0FD9F7EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B349E95B04FBA5B71B7219FA /* Pods_Toast_Popup_tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8973ACCA2890998E0007B49B /* Build configuration list for PBXNativeTarget "Toast_Popup_tutorial" */;
 			buildPhases = (
+				28A036891B9B63687141DED2 /* [CP] Check Pods Manifest.lock */,
 				8973ACB82890998C0007B49B /* Sources */,
 				8973ACB92890998C0007B49B /* Frameworks */,
 				8973ACBA2890998C0007B49B /* Resources */,
+				06C90C198B2BA13534B76D81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +161,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06C90C198B2BA13534B76D81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toast_Popup_tutorial/Pods-Toast_Popup_tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toast_Popup_tutorial/Pods-Toast_Popup_tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Toast_Popup_tutorial/Pods-Toast_Popup_tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28A036891B9B63687141DED2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Toast_Popup_tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8973ACB82890998C0007B49B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8973ACC22890998C0007B49B /* ContentView.swift in Sources */,
+				89AB17232891E2DB00345ED5 /* Extensions.swift in Sources */,
 				8973ACC02890998C0007B49B /* Toast_Popup_tutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +333,7 @@
 		};
 		8973ACCB2890998E0007B49B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50121AD7B44431F4DBAE1F46 /* Pods-Toast_Popup_tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +363,7 @@
 		};
 		8973ACCC2890998E0007B49B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9E1A5DE6D85BB97EA7441D /* Pods-Toast_Popup_tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
